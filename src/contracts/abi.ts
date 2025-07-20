@@ -1,0 +1,18 @@
+export const CONTRACT_ADDRESS = "0x989535dBb065129342DAc412D6125Df7a4D38ecA";
+export const MINES_GAME_ABI = [
+  { "inputs": [{ "internalType": "bytes32", "name": "gameId", "type": "bytes32" }, { "internalType": "uint256", "name": "multiplier", "type": "uint256" }, { "internalType": "string", "name": "seed", "type": "string" }], "name": "cashOut", "outputs": [], "stateMutability": "nonpayable", "type": "function" },
+  { "inputs": [], "name": "depositToHouse", "outputs": [], "stateMutability": "payable", "type": "function" },
+  { "inputs": [{ "internalType": "bytes32", "name": "gameId", "type": "bytes32" }, { "internalType": "string", "name": "seed", "type": "string" }], "name": "gameOver", "outputs": [], "stateMutability": "nonpayable", "type": "function" },
+  { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
+  { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "bytes32", "name": "gameId", "type": "bytes32" }, { "indexed": true, "internalType": "address", "name": "player", "type": "address" }, { "indexed": false, "internalType": "uint256", "name": "payout", "type": "uint256" }, { "indexed": false, "internalType": "bool", "name": "won", "type": "bool" }], "name": "GameEnded", "type": "event" },
+  { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "bytes32", "name": "gameId", "type": "bytes32" }, { "indexed": true, "internalType": "address", "name": "player", "type": "address" }, { "indexed": false, "internalType": "uint256", "name": "wager", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "mineCount", "type": "uint256" }], "name": "GameStarted", "type": "event" },
+  { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "bytes32", "name": "gameId", "type": "bytes32" }, { "indexed": false, "internalType": "string", "name": "seed", "type": "string" }], "name": "SeedRevealed", "type": "event" },
+  { "inputs": [{ "internalType": "bytes32", "name": "gameId", "type": "bytes32" }, { "internalType": "bytes32", "name": "seedHash", "type": "bytes32" }, { "internalType": "uint256", "name": "mineCount", "type": "uint256" }], "name": "startGame", "outputs": [], "stateMutability": "payable", "type": "function" },
+  { "inputs": [{ "internalType": "uint256", "name": "amount", "type": "uint256" }], "name": "withdrawFromHouse", "outputs": [], "stateMutability": "nonpayable", "type": "function" },
+  { "stateMutability": "payable", "type": "receive" },
+  { "inputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }], "name": "games", "outputs": [{ "internalType": "address", "name": "player", "type": "address" }, { "internalType": "uint256", "name": "wager", "type": "uint256" }, { "internalType": "uint256", "name": "mineCount", "type": "uint256" }, { "internalType": "bytes32", "name": "seedHash", "type": "bytes32" }, { "internalType": "bool", "name": "isActive", "type": "bool" }, { "internalType": "uint256", "name": "timestamp", "type": "uint256" }], "stateMutability": "view", "type": "function" },
+  { "inputs": [], "name": "houseBalance", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" },
+  { "inputs": [], "name": "MAX_WAGER", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" },
+  { "inputs": [], "name": "MIN_WAGER", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" },
+  { "inputs": [], "name": "owner", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }
+];
