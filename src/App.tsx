@@ -65,17 +65,7 @@ function App() {
             <div className="text-sm text-gray-400">Somnia Testnet</div>
             <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
             <div className="text-sm text-gray-400">Verified Contract</div>
-            <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
-            {/* Dev X (Twitter) link moved here */}
-            <a
-              href="https://x.com/0xhardyy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-1"
-            >
-              
-              <span>@0xhardyy</span>
-            </a>
+            {/* Removed Twitter/X link */}
           </div>
         </div>
 
